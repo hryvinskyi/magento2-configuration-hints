@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2025. Volodymyr Hryvinskyi. All rights reserved.
+ * Author: Volodymyr Hryvinskyi <volodymyr@hryvinskyi.com>
+ * GitHub: https://github.com/hryvinskyi
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Config\Model\Config\Structure\Element\Field">
+        <plugin name="add_hints_to_config_field"
+                type="Hryvinskyi\ConfigurationHints\Plugin\AddHintsToConfigField"
+                sortOrder="10" />
+    </type>
+    <type name="Magento\Config\Block\System\Config\Form\Field">
+        <plugin name="add_config_path_to_comment"
+                type="Hryvinskyi\ConfigurationHints\Plugin\AddHintsToBlockField"
+                sortOrder="1"
+                disabled="false"/>
+    </type>
+</config>

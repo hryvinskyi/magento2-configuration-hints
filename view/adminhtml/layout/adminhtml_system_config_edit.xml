@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2025. Volodymyr Hryvinskyi. All rights reserved.
+ * Author: Volodymyr Hryvinskyi <volodymyr@hryvinskyi.com>
+ * GitHub: https://github.com/hryvinskyi
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Hryvinskyi_ConfigurationHints/css/config-path-copy.css"/>
+    </head>
+    <body>
+        <referenceContainer name="js">
+            <block class="Magento\Framework\View\Element\Template" name="hryvinskyi_configuration_hints_js"
+                   template="Hryvinskyi_ConfigurationHints::init-js.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

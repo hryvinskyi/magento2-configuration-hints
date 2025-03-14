@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) 2025. Volodymyr Hryvinskyi. All rights reserved.
+ * Author: Volodymyr Hryvinskyi <volodymyr@hryvinskyi.com>
+ * GitHub: https://github.com/hryvinskyi
+ */
+
+.accordion .config .value.with-tooltip .addafter ~ div.tooltip {
+    margin-top: -25px;
+}
+
+.config-path-copy {
+    display: inline-flex;
+    flex-flow: wrap row;
+    gap: 10px;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 10px;
+    width: 100%;
+}
+
+.config-path-copy code {
+    padding: 3px 5px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    font-size: 10px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+    width: auto;
+}
+
+.config-path-label {
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+}
+.copy-path-code.success {
+    background: #79a22e;
+    color: #fff;
+    border-color: #79a22e;
+}
+
+.copy-path-code.error {
+    background: #e22626;
+    color: #fff;
+    border-color: #e22626;
+}

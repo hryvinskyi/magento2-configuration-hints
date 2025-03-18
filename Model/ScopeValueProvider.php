@@ -12,10 +12,10 @@ namespace Hryvinskyi\ConfigurationHints\Model;
 use Hryvinskyi\ConfigurationHints\Api\ScopeValueProviderInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
-readonly class ScopeValueProvider implements ScopeValueProviderInterface
+class ScopeValueProvider implements ScopeValueProviderInterface
 {
     public function __construct(
-        private ScopeConfigInterface $scopeConfig
+        private readonly ScopeConfigInterface $scopeConfig
     ) {
     }
 

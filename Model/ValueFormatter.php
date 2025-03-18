@@ -12,10 +12,10 @@ namespace Hryvinskyi\ConfigurationHints\Model;
 use Magento\Config\Model\Config\Structure\AbstractElement;
 use Magento\Framework\Escaper;
 
-readonly class ValueFormatter
+class ValueFormatter
 {
     public function __construct(
-        private Escaper $escaper
+        private readonly Escaper $escaper
     ) {
     }
 

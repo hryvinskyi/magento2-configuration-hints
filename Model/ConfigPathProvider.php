@@ -11,7 +11,7 @@ namespace Hryvinskyi\ConfigurationHints\Model;
 
 use Hryvinskyi\ConfigurationHints\Api\ConfigPathProviderInterface;
 
-readonly class ConfigPathProvider implements ConfigPathProviderInterface
+class ConfigPathProvider implements ConfigPathProviderInterface
 {
     /**
      * @inheritDoc

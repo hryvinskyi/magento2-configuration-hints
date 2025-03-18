@@ -12,10 +12,10 @@ namespace Hryvinskyi\ConfigurationHints\Model;
 use Hryvinskyi\ConfigurationHints\Api\RequestScopeReaderInterface;
 use Magento\Framework\App\RequestInterface;
 
-readonly class RequestScopeReader implements RequestScopeReaderInterface
+class RequestScopeReader implements RequestScopeReaderInterface
 {
     public function __construct(
-        private RequestInterface $request
+        private readonly RequestInterface $request
     ) {
     }
 

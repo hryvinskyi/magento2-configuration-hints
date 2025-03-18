@@ -18,15 +18,15 @@ use Magento\Store\Api\StoreRepositoryInterface;
 use Magento\Store\Api\WebsiteRepositoryInterface;
 use Magento\Store\Model\ScopeInterface;
 
-readonly class HintGenerator
+class HintGenerator
 {
     public function __construct(
-        private ConfigPathProviderInterface $configPathProvider,
-        private ScopeValueProviderInterface $scopeValueProvider,
-        private RequestScopeReaderInterface $requestScopeReader,
-        private ValueFormatter $valueFormatter,
-        private StoreRepositoryInterface $storeRepository,
-        private WebsiteRepositoryInterface $websiteRepository
+        private readonly ConfigPathProviderInterface $configPathProvider,
+        private readonly ScopeValueProviderInterface $scopeValueProvider,
+        private readonly RequestScopeReaderInterface $requestScopeReader,
+        private readonly ValueFormatter $valueFormatter,
+        private readonly StoreRepositoryInterface $storeRepository,
+        private readonly WebsiteRepositoryInterface $websiteRepository
     ) {
     }
 
